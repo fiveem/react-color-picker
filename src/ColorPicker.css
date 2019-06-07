@@ -1,0 +1,74 @@
+.colorPicker {
+    display: flex;
+    position: relative;
+}
+
+.colorsList {
+    background: #ffffff;
+    border: 1px solid #bbbbbb;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    padding: 8px;
+    border-radius: 4px;
+    grid-gap: 2px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+
+.color {
+    width: 32px;
+    height: 32px;
+    outline: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.color:hover {
+    border: 1px solid #000000
+}
+
+.color:hover {
+    cursor: pointer;
+}
+
+input:read-only {
+    outline: none;
+}
+
+input:read-only:hover {
+    cursor: pointer;
+}
+
+.selectedColor {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 32px;
+    flex: 1;
+}
+
+.selectedColor:hover {
+    cursor: pointer;
+}
+
+.selectedColor .selectedColorIcon {
+    height: 100%;
+    width: 32px;
+    border-left: 1px solid #cccccc;
+}
+
+.selectedColor .selectedColorValue {
+    flex: 1;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    padding: 6px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}

@@ -1,0 +1,52 @@
+{
+  "name": "@fiveem/react-color-picker",
+  "version": "0.0.1",
+  "description": "React Color Picker",
+  "keywords": [
+    "react",
+    "color picker"
+  ],
+  "author": "Razvan Muntian <muntianrazvan@gmail.com> (https://razvan.muntian.ro)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fiveem/react-color-picker.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fiveem/react-color-picker/issues"
+  },
+  "homepage": "https://github.com/fiveem/react-color-picker#readme",
+  "main": "lib/index.js",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "scripts": {
+    "clean": "rm -rf lib && mkdir lib",
+    "lib": "npm run clean && babel src -d lib"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0"
+  },
+  "files": [
+    "lib"
+  ]
+}
