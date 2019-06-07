@@ -1,7 +1,7 @@
 {
   "name": "@fiveem/react-color-picker",
   "description": "React Color Picker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "build": "webpack --mode production"
   },
