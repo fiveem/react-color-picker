@@ -1,7 +1,7 @@
 import React from 'react'
-import './ColorPicker.css'
 import ColorPalette from './ColorPalette'
 import Input from './Input'
+import style from './style.scss'
 
 class ColorPicker extends React.Component {
     constructor(props) {
@@ -55,7 +55,7 @@ class ColorPicker extends React.Component {
 
     render() {
         return (
-            <div ref={this.toggleContainer} className="colorPicker">
+            <div ref={this.toggleContainer} className={style.colorPicker}>
                 <Input value={this.props.value} onChange={this.onColorChangeHandler} onClick={this.showPalette}/>
                 {this.renderColorPalette()}
             </div>

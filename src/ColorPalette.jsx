@@ -1,5 +1,6 @@
 import React from 'react'
 import COLORS from './Colors'
+import style from './style.scss'
 
 class ColorPalette extends React.Component {
     onColorSelected(color) {
@@ -8,13 +9,9 @@ class ColorPalette extends React.Component {
 
     render() {
         return (
-            <div className="colorsList">
+            <div className={style.colorsList}>
                 {COLORS.map(color => {
-                    const style = {
-                        background: color
-                    }
-
-                    return <div style={style} onClick={this.onColorSelected.bind(this, color)} key={color} className="color"></div>
+                    return <div style={{ background: color }} onClick={this.onColorSelected.bind(this, color)} key={color} className={style.color}></div>
                 })}
             </div>
         )
