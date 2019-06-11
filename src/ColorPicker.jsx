@@ -37,7 +37,10 @@ class ColorPicker extends React.Component {
     }
 
     onColorChangeHandler(color) {
-        this.props.onChange(color)
+        this.props.onChange({
+            name: this.props.name || 'color',
+            value: color
+        })
         this.hidePalette()
     }
 
