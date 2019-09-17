@@ -22,7 +22,7 @@ export default class ColorPickerDemo extends React.Component {
 
     render() {
         return (
-            <ColorPicker value={this.state.value} name={this.state.name} onChange={this.onChange} colors={COLORS}/>
+            <ColorPicker value={this.state.value} name={this.state.name} onChange={this.onChange} />
         )
     }
 }
