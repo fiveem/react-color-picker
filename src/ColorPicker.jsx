@@ -67,7 +67,7 @@ class ColorPicker extends React.Component {
 
     renderColorPalette() {
         if (this.state.isPaletteVisible) {
-            return <ColorPalette onSelectColor={this.onColorChangeHandler} />
+            return <ColorPalette onSelectColor={this.onColorChangeHandler} colors={this.props.colors}/>
         }
         return null
     }
