@@ -8,11 +8,11 @@ class ColorPalette extends React.Component {
     }
 
     render() {
-        const COLORS = this.props.colors || COLORS
+        const colorList = this.props.colors || COLORS
 
         return (
             <div className={style.colorsList}>
-                {COLORS.map(color => {
+                {colorList.map(color => {
                     return <div style={{ background: color }} onClick={this.onColorSelected.bind(this, color)} key={color} className={style.color}></div>
                 })}
             </div>
