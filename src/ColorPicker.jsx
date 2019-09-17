@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import ColorPalette from './ColorPalette'
 import Input from './Input'
 import style from './style.scss'
@@ -71,6 +73,13 @@ class ColorPicker extends React.Component {
         }
         return null
     }
+}
+
+ColorPicker.propTypes = {
+    value: PropTypes.string.isRequired,
+    name: PropTypes.string,
+    onChange: PropTypes.func.isRequired,
+    colors: PropTypes.array
 }
 
 export default ColorPicker
